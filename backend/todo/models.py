@@ -9,7 +9,7 @@ class Todo(models.Model):
 
     # set to current time
     created = models.DateTimeField(auto_now_add=True)
-    created_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     # user who posted the
     user = models.ForeignKey(
